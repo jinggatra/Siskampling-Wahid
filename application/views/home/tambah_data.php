@@ -14,16 +14,23 @@
   </div>
 
   <div class="form-group row">
-    <label for="nim" class="col-sm-2 col-form-label">Nim</label>
+    <label for="nim" class="col-sm-2 col-form-label">Hari</label>
     <div class="col-sm-5">
-      <input type="number" class="form-control" name="nim" required="">
+      <input type="text" class="form-control" name="hari" required="">
     </div>
   </div>
 
   <div class="form-group row">
-    <label for="alamat" class="col-sm-2 col-form-label">Alamat</label>
+    <label for="alamat" class="col-sm-2 col-form-label">Nama Desa</label>
     <div class="col-sm-5">
-      <input type="text" class="form-control" name="alamat" required="">
+      <input type="text" class="form-control" name="nama desa" required="">
+    </div>
+  </div>
+
+  <div class="form-group row">
+    <label for="alamat" class="col-sm-2 col-form-label">Tanggal Jaga</label>
+    <div class="col-sm-5">
+      <input type="date" class="form-control" name="tanggal jaga" required="">
     </div>
   </div>
 

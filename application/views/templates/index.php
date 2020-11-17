@@ -18,9 +18,10 @@
             <thead>
               <tr>
                 <th>No</th>
-                <th>nama</th>
-                <th>nim</th>
-                <th>alamat</th>
+                <th>Nama</th>
+                <th>Hari</th>
+                <th>Nama Desa</th>
+                <th>Tanggal Jaga</th>
                 <th style="width: 125px;">Action</th>
               </tr>
             </thead>
@@ -28,17 +29,18 @@
               <?php
               $no = 1;
 
-              foreach ($mahasiswa  as $mhs) :
+              foreach ($tb_jadwal  as $tbl) :
               ?>
                 <tr>
                   <td><?php echo $no++ ?></td>
-                  <td><?php echo $mhs['nama']; ?></td>
-                  <td><?php echo $mhs['nim']; ?></td>
-                  <td><?php echo $mhs['alamat']; ?></td>
+                  <td><?php echo $tbl['nama']; ?></td>
+                  <td><?php echo $tbl['hari']; ?></td>
+                  <td><?php echo $tbl['nama_desa']; ?></td>
+                  <td><?php echo $tbl['tgl_jaga']; ?></td>
                   <td>
-                    <a href="<?php echo base_url() ?>Home/edit_data/<?php echo $mhs['id']; ?>" class="badge badge-primary">Edit</a>
+                    <a href="<?php echo base_url() ?>Home/edit_data/<?php echo $tbl['id']; ?>" class="badge badge-primary">Edit</a>
 
-                    <a href="<?php echo base_url() ?>Home/hapus_data/<?php echo $mhs['id']; ?>" class="badge badge-danger">Hapus</a>
+                    <a href="<?php echo base_url() ?>Home/hapus_data/<?php echo $tbl['id']; ?>" class="badge badge-danger">Hapus</a>
                   </td>
 
                 </tr>

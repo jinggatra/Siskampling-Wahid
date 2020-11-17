@@ -6,7 +6,7 @@ class Home extends CI_Controller
 	public function index()
 	{
 		$data['title'] = 'Halaman Data Jaga Malam';
-		$data['mahasiswa'] = $this->M_mahasiswa->SemuaData();
+		$data['tb_jadwal'] = $this->T_tb_jadwal->SemuaData();
 		$this->load->view('templates/header', $data);
 		$this->load->view('templates/sidebar');
 		$this->load->view('templates/topbar');
@@ -17,7 +17,7 @@ class Home extends CI_Controller
 	public function tambah_data()
 	{
 		$data['title'] = 'Halaman Tambah Warga';
-		$data['mahasiswa'] = $this->M_mahasiswa->SemuaData();
+		$data['tb_jadwal'] = $this->T_tb_jadwal->SemuaData();
 		$this->load->view('templates/header', $data);
 		$this->load->view('templates/sidebar');
 		$this->load->view('templates/topbar');
@@ -49,7 +49,7 @@ class Home extends CI_Controller
 
 	public function proses_tambah_data()
 	{
-		$this->M_mahasiswa->proses_tambah_data();
+		$this->T_tbl_jadwal->proses_tambah_data();
 		$this->session->set_flashdata('pesan' , '<div class="alert alert-success" role="alert">
 			 Data baru berhasil Ditambahkan!
 			</div>');
@@ -58,7 +58,7 @@ class Home extends CI_Controller
 
 	public function hapus_data($id)
 	{
-		$this->M_mahasiswa->hapus_data($id);
+		$this->T_tbl_jadwal->hapus_data($id);
 		$this->session->set_flashdata('pesan' , '<div class="alert alert-success" role="alert">
 			 Data berhasil Dihapus!
 			</div>');
@@ -68,7 +68,7 @@ class Home extends CI_Controller
 	public function edit_data($id)
 	{
 		$data['title'] = 'Halaman Edit Mahasiswa';
-		$data['mahasiswa'] = $this->M_mahasiswa->ambil_id_mahasiswa($id);
+		$data['tb_jadwal'] = $this->T_tb_jadwal->ambil_id_tb_jadwal($id);
 		$this->load->view('templates/header',$data);
 		$this->load->view('templates/sidebar');
 		$this->load->view('templates/topbar');
@@ -78,7 +78,7 @@ class Home extends CI_Controller
 
 	public function proses_edit_data($id)
 	{
-		$this->M_mahasiswa->proses_edit_data($id);
+		$this->T_tb_jadwal->proses_edit_data($id);
 		$this->session->set_flashdata('pesan' , '<div class="alert alert-success" role="alert">
 			 Data berhasil Diedit!
 			</div>');

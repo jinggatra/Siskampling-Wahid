@@ -7,31 +7,38 @@
 
 	<form method="post" action="<?php echo base_url('Home/proses_edit_data') ?>">
 
-    <input type="hidden" name="id" value="<?php echo $mahasiswa['id']; ?>">
+    <input type="hidden" name="id" value="<?php echo $tb_jadwal['id']; ?>">
 
   <div class="form-group row">
     <label for="nama" class="col-sm-2 col-form-label">Nama</label>
     <div class="col-sm-5">
-      <input type="text" class="form-control" name="nama" required="" value="<?php echo $mahasiswa['nama']; ?>">
+      <input type="text" class="form-control" name="nama" required="" value="<?php echo $tb_jadwal['nama']; ?>">
     </div>
   </div>
 
   <div class="form-group row">
-    <label for="nim" class="col-sm-2 col-form-label">Nim</label>
+    <label for="hari" class="col-sm-2 col-form-label">Hari</label>
     <div class="col-sm-5">
-      <input type="number" class="form-control" name="nim" required="" value="<?php echo $mahasiswa['nim']; ?>">
+      <input type="text" class="form-control" name="hari" required="" value="<?php echo $tb_jadwal['hari']; ?>">
     </div>
   </div>
 
   <div class="form-group row">
-    <label for="alamat" class="col-sm-2 col-form-label">Alamat</label>
+    <label for="nama desa" class="col-sm-2 col-form-label">Nama Desa</label>
     <div class="col-sm-5">
-      <input type="text" class="form-control" name="alamat" required="" value="<?php echo $mahasiswa['alamat']; ?>">
+      <input type="text" class="form-control" name="nama desa" required="" value="<?php echo $tb_jadwal['nama_desa']; ?>">
     </div>
   </div>
 
   <div class="form-group row">
-    <label for="alamat" class="col-sm-2 col-form-label"></label>
+    <label for="tanggal jaga" class="col-sm-2 col-form-label">Tanggal Jaga</label>
+    <div class="col-sm-5">
+      <input type="date" class="form-control" name="tanggal jaga" required="" value="<?php echo $tb_jadwal['tgl_jaga']; ?>">
+    </div>
+  </div>
+
+  <div class="form-group row">
+    <label for="nama desa" class="col-sm-2 col-form-label"></label>
     <div class="col-sm-5">
       <button type="submit" class="btn btn-primary">Ubah</button>
       <button type="reset" class="btn btn-danger">Reset</button>
