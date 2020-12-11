@@ -14,17 +14,17 @@ class T_tb_jadwal extends CI_Model
 
     		"nama" => $this->input->post('nama', true),
     		"hari" => $this->input->post('hari', true),
-            "nama desa" => $this->input->post('nama desa', true),
-            "tanggal jaga" => $this->input->post('tanggal jaga', true),
+        "nama_desa" => $this->input->post('nama_desa', true),
+        "tgl_jaga" => $this->input->post('tanggal_jaga', true),
     	];
 
-    	$this->db->insert('tb_data', $data);
+    	$this->db->insert('tb_jadwal', $data);
     }
 
     public function hapus_data($id)
     {
         $this->db->where('id' ,$id);
-        $this->db->delete('tb_data');
+        $this->db->delete('tb_jadwal');
     }
 
     public function ambil_id_tb_jadwal($id)
@@ -37,8 +37,8 @@ class T_tb_jadwal extends CI_Model
         $data = [
             "nama" => $this->input->post('nama'),
             "hari" => $this->input->post('hari'),
-            "nama desa" => $this->input->post('nama_desa'),
-            "tanggal jaga" => $this->input->post('tgl_jaga'),
+            "nama_desa" => $this->input->post('nama_desa'),
+            "tgl_jaga" => $this->input->post('tgl_jaga'),
         ];
 
         $this->db->where('id', $this->input->post('id'));

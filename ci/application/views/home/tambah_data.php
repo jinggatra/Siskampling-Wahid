@@ -1,5 +1,5 @@
 <div class="container-fluid">
-	
+
 	<h3><?php echo $title; ?></h3>
 	<hr>
 	<br>
@@ -23,14 +23,14 @@
   <div class="form-group row">
     <label for="alamat" class="col-sm-2 col-form-label">Nama Desa</label>
     <div class="col-sm-5">
-      <input type="text" class="form-control" name="nama desa" required="">
+      <input type="text" class="form-control" name="nama_desa" required="">
     </div>
   </div>
 
   <div class="form-group row">
     <label for="alamat" class="col-sm-2 col-form-label">Tanggal Jaga</label>
     <div class="col-sm-5">
-      <input type="date" class="form-control" name="tanggal jaga" required="">
+      <input type="date" class="form-control" name="tanggal_jaga" required="">
     </div>
   </div>
 

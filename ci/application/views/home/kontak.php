@@ -4,7 +4,6 @@
 	<hr>
 	<br>
 	
-	align
 	<div class="container">
 		<div class="card text-left">
 		  <img class="card-img-top" src="holder.js/100px180/" alt="">
@@ -16,26 +15,31 @@
 				<thead class="thead-inverse">
 					<tr>
 						<th>Nama</th>
-						<th>Nomor Kelurahan</th>
+						<th>Nomor Keluhan</th>
 						<th>Nama Desa</th>
 					</tr>
 					</thead>
 					<tbody>
 						<tr>
-							<td scope="row">Wahid</td>
-							<td>Wahid</td>
-							<td>Wahid</td>
+							<td scope="row">Nor Wahid Hidayad Ulloh</td>
+							<td>081223987986</td>
+							<td>Senggani</td>
 						</tr>
 						<tr>
-							<td scope="row">Wahid</td>
-							<td>Wahid</td>
-							<td>Wahid</td>
+							<td scope="row">Dhimas Shela</td>
+							<td>082345768985</td>
+							<td>Senggani</td>
+						</tr>
+						<tr>
+							<td scope="row">aflah brilianto</td>
+							<td>082345768985</td>
+							<td>Senggani</td>
 						</tr>
 					</tbody>
 			</table>
 
 			<h2>Senggani</h2>
-			<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+			<p>Tetap semangat untuk menjalani jaga malam atau siskampling dana jaga diri baik baik, jangan lupa menggunakan masker agar terjindar dari virus corona.</p>
 		  </div>
 		</div>
 	</div>

@@ -27,8 +27,8 @@ class Home extends CI_Controller
 
 	public function kontak()
 	{
-		$data['title'] = 'Kontak';
-		
+		$data['title'] = '';
+
 		$this->load->view('templates/header', $data);
 		$this->load->view('templates/sidebar');
 		$this->load->view('templates/topbar');
@@ -39,17 +39,17 @@ class Home extends CI_Controller
 	public function Login()
 	{
 		$data['title'] = 'Login';
-		
-		// $this->load->view('templates/header', $data);
-		// $this->load->view('templates/sidebar');
-		// $this->load->view('templates/topbar');
+
+		$this->load->view('templates/header', $data);
+		$this->load->view('templates/sidebar');
+		$this->load->view('templates/topbar');
 		$this->load->view('home/login', $data);
-		// $this->load->view('templates/footer');
+		$this->load->view('templates/footer');
 	}
 
 	public function proses_tambah_data()
 	{
-		$this->T_tbl_jadwal->proses_tambah_data();
+		$this->T_tb_jadwal->proses_tambah_data();
 		$this->session->set_flashdata('pesan' , '<div class="alert alert-success" role="alert">
 			 Data baru berhasil Ditambahkan!
 			</div>');
@@ -58,7 +58,7 @@ class Home extends CI_Controller
 
 	public function hapus_data($id)
 	{
-		$this->T_tbl_jadwal->hapus_data($id);
+		$this->T_tb_jadwal->hapus_data($id);
 		$this->session->set_flashdata('pesan' , '<div class="alert alert-success" role="alert">
 			 Data berhasil Dihapus!
 			</div>');
@@ -76,9 +76,9 @@ class Home extends CI_Controller
 		$this->load->view('templates/footer');
 	}
 
-	public function proses_edit_data($id)
+	public function proses_edit_data()
 	{
-		$this->T_tb_jadwal->proses_edit_data($id);
+		$this->T_tb_jadwal->proses_edit_data($this->input->post('id'));
 		$this->session->set_flashdata('pesan' , '<div class="alert alert-success" role="alert">
 			 Data berhasil Diedit!
 			</div>');
